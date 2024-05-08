@@ -1,0 +1,31 @@
+{
+  "name": "vanilla-stack",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Next.js web starter template for personal use",
+  "author": {
+    "name": "Raimonds Sarkanbardis",
+    "email": "raimonds.sarkanbardis@gmail.com",
+    "url": "https://visioner.dev/"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "storybook": "turbo run storybook --filter=web",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "^1.9.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "npm@9.2.0"
+}
